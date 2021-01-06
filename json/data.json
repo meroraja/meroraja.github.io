@@ -1,1 +1,1 @@
-data='[{"name":"America/Los_Angeles","zone":"America/Los_Angeles"},{"name":"Asia/Tokyo","zone":"Asia/Tokyo"},{"name":"Australia/Sydney","zone":"Australia/Sydney"}]';
+data='[{"name":"America/Los_Angeles","zone":"America/Los_Angeles"},{"name":"Asia/Tokyo","zone":"Asia/Tokyo"},{"name":"Australia/Sydney","zone":"Australia/Sydney"},{"name":"Asia/Kathmandu","zone":"Asia/Kathmandu"}]';
