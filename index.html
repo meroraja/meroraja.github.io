@@ -26,9 +26,14 @@
 <body>
   <nav class="navbar sticky-top navbar-light bg-light">
   <a class="navbar-brand">Timezones</a>
-        <div class="mx-auto">
+        <div class="row mx-auto">
+          <div class="col-lg-6 mb-1">
+          <input type="text" id="searchName" class="search" placeholder="Search Timezone"/>
+          </div>
+          <div class="col-lg-6 mb-1">
           <select class="selectpicker" data-style="btn-secondary" id="expectedTime" title="Select a time" data-live-search="true">
           </select>
+          </div>
         </div>
   </nav>
 

@@ -1,5 +1,6 @@
 var choosenTime='0';
 var fixedTimeZone = 'Atlantic/South_Georgia';
+var searchZone='';
 
 function displayTime() {
 
@@ -38,6 +39,7 @@ function displayTime() {
     $("#noticeListData").html("");
     $("#noticeListPagination").html("");
     var noticeList = new List('noticeList', options, zones);
+    noticeList.search(searchZone);
     
     setTimeout(displayTime, 1000);
 
@@ -46,6 +48,7 @@ function displayTime() {
 $(document).ready(function() {
     displayTime();
     instantiateTimePicker();
+    instantiateSearch();
 });
 
 
@@ -72,4 +75,10 @@ function populateSelect(id,data){
     });
     $('#'+id).html(html);
     $('#'+id).selectpicker('refresh');
+}
+
+function instantiateSearch(){
+    $('#searchName').on('input',function(e){
+        searchZone=$('#searchName').val()
+    });
 }
