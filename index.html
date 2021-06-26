@@ -20,13 +20,20 @@
   <link rel="apple-touch-icon" href="img/android-chrome-192x192.png">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" integrity="sha512-ARJR74swou2y0Q2V9k0GbzQ/5vJ2RBSoCWokg4zkfM29Fb3vZEQyv0iWBMW/yvKgyHSR/7D64pFMmU8nYmbRkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script type="text/javascript" src="json/data.json"></script>
 </head>
 <body>
   <div class="container mt-4">
     <div class="row">
-      <div class="mx-auto mb-3">
-          <h3>Eep</h3>
+      <div class="d-flex flex-row mb-3 mx-auto">
+        <div class="p2">
+          <label for="expectedTime"><strong>Expected Time</strong></label>
+        </div>
+        <div class="p2">
+          <select class="form-control" id="expectedTime" name="expectedTime" data-live-search="true">
+          </select>
+        </div>
       </div>
     </div>
     <div class="row">
@@ -45,6 +52,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.32/moment-timezone-with-data-10-year-range.min.js" integrity="sha512-slz1twJtg0JVoY34XV5nDu8vtwVuEnMnnJjNJx8gq/ZysGQ+NKM4UqGSzaGYeg0SftS2Hr0foXdeYNw7ELDrDQ==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js" integrity="sha512-FkM4ZGExuYz4rILLbNzw8f3HxTN9EKdXrQYcYfdluxJBjRLthYPxxZixV/787qjN3JLs2607yN5XknR/cQMU8w==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.0/list.min.js" integrity="sha512-93wYgwrIFL+b+P3RvYxi/WUFRXXUDSLCT2JQk9zhVGXuS2mHl2axj6d+R6pP+gcU5isMHRj1u0oYE/mWyt/RjA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js" integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="app.js" type="text/javascript"></script>
 <script src="js/scripts.js" type="text/javascript"></script>
 </html>
