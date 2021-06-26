@@ -12,7 +12,7 @@ if (workbox) {
   workbox.precaching.precacheAndRoute([
     {
       "url": "/",
-      "revision": "2"
+      "revision": "3"
     }
   ]);
 
