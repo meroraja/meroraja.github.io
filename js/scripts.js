@@ -18,8 +18,8 @@ function displayTime() {
     itemValue2+='<div class="blog-entry">'
     itemValue2+='<div class="text d-flex">'
     itemValue2+='<blockquote class="blockquote">'
-    itemValue2+='<span><h5 class="name"></h5>'
-    itemValue2+=' <em><span class="badge badge-secondary"><strong class="future_time"></strong></span></em><span>'
+    itemValue2+='<h5><span class="name mr-1"></span><span class="badge position-absolute top-0 start-100 bg-dark text-light castles"></span></h5>'
+    itemValue2+=' <em><span class="badge badge-secondary"><strong class="future_time"></strong></em><span>'
     itemValue2+='<footer class="blockquote-footer"><strong class="time"></strong> <span> - <small class="zone"></small></span></footer>'
     itemValue2+='</blockquote>'
     itemValue2+='</div>'
@@ -28,7 +28,7 @@ function displayTime() {
     itemValue2+='</div>'
 
     var options ={
-        valueNames: ['name','time','zone','future_time'],
+        valueNames: ['name','time','zone','future_time','castles'],
         item: itemValue2,
         page: 30,
         pagination: [{
@@ -55,7 +55,7 @@ $(document).ready(function() {
 function instantiateTimePicker(){
     var timeOptions=[{'value':'0','label':'Reset'}]
 
-    for (var i = 1; i < 24; i++) {
+    for (var i = 1; i <= 24; i++) {
         timeOptions.push({'value':i,'label':'+'+i})
     }
     populateSelect('expectedTime',timeOptions);

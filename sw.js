@@ -12,7 +12,7 @@ if (workbox) {
   workbox.precaching.precacheAndRoute([
     {
       "url": "/",
-      "revision": "4"
+      "revision": "5"
     }
   ]);
 
@@ -30,7 +30,7 @@ if (workbox) {
       plugins: [
         new workbox.expiration.ExpirationPlugin({
           maxEntries: 5,
-          maxAgeSeconds: 12 * 60 * 60, // 12 hrs
+          maxAgeSeconds: 8 * 60 * 60, // 8 hrs
         }),
       ],
     }),
