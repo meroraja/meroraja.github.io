@@ -67,7 +67,6 @@ function populateSelect(id,data){
     // IdName :- ID name of select option
     // Data :- Dict with option value and label to populate
     var html='';
-    html+='<option value="" selected>Choose...</option>'
     data.forEach(function(option){
         html+='<option value="'+option.value+'">'+option.label+'</option>';
     });

@@ -24,18 +24,15 @@
   <script type="text/javascript" src="json/data.json"></script>
 </head>
 <body>
-  <div class="container mt-4">
-    <div class="row">
-      <div class="d-flex flex-row mb-3 mx-auto">
-        <div class="p2">
-          <label for="expectedTime"><strong>Expected Time</strong></label>
-        </div>
-        <div class="p2">
-          <select class="form-control" id="expectedTime" name="expectedTime" data-live-search="true">
+  <nav class="navbar sticky-top navbar-light bg-light">
+  <a class="navbar-brand">Timezones</a>
+        <div class="mx-auto">
+          <select class="selectpicker" data-style="btn-secondary" id="expectedTime" title="Select a time" data-live-search="true">
           </select>
         </div>
-      </div>
-    </div>
+  </nav>
+
+  <div class="container mt-4">
     <div class="row">
       <div class="col-lg-12" id="noticeList">
           <div class="row list" id="noticeListData">
